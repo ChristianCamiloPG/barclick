@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARCLICK - Login</title>
+    <link rel="stylesheet" href="../css/login.css"> <!-- Verifica la ruta del CSS -->
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="../img/logobarclick.png" alt="Logo BARCLICK">
+        </div>
+        
+        <!-- Título principal -->
+        <h1 class="title">BARCLICK</h1>
+        
+        <form class="login-form">
+            <!-- Campo CORREO -->
+            <div class="form-group">
+                <label for="email">CORREO</label>
+                <input type="email" id="email" placeholder="ejemplo@barclick.com" required>
+            </div>
+            
+            <!-- Campo CONTRASEÑA -->
+            <div class="form-group">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            
+            <!-- Botón de inicio -->
+            <button type="submit" class="btn-login">INICIAR SESIÓN</button>
+        </form>
+        
+        <!-- Enlace de registro -->
+        <div class="register-link">
+            <p>¿No tienes cuenta? <a href="register.html">REGÍSTRATE</a></p>
+        </div>
+    </div>
+</body>
+</html>

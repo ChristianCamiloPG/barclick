@@ -1,0 +1,166 @@
+/* Estilos base */
+:root {
+    --azul-primario: #030303;
+    --azul-secundario: #6f8d9e;
+    --gris-claro: #6f8d9e;
+    --texto-oscuro: #333333;
+    --sombra: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--gris-claro);
+    min-height: 100vh;
+}
+
+/* Estilos comunes */
+.login-container, .main-container {
+    background: rgb(204, 206, 183);
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+/* Login y Registro */
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.title {
+    color: var(--azul-primario);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2rem;
+    color: var(--texto-oscuro);
+    font-weight: 800;
+}
+
+.form-group input, .role-select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6f8d9e;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .role-select:focus {
+    outline: none;
+    border-color: var(--azul-primario);
+}
+
+.btn-login, .reserve-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--azul-primario);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-login:hover, .reserve-btn:hover {
+    background: var(--azul-secundario);
+}
+
+/* Página de usuario */
+.search-section {
+    margin-bottom: 2rem;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.barber-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    margin-bottom: 1.5rem;
+}
+
+.featured-cuts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .login-container, .main-container {
+        padding: 5rem;
+    }
+    
+    .logo img {
+        width: 140px;
+    }
+    
+    .filters {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-cuts {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input, .role-select {
+        padding: 10¡px;
+    }
+    
+    .title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Selector de rol mejorado */
+.role-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232A2A72'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}

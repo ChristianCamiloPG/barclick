@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARCLICK - Registro</title>
+    <link rel="stylesheet" href="../css/login.css"> <!-- Mismo CSS que login -->
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="../img/logobarclick.png" alt="Logo BARCLICK">
+        </div>
+        
+        <h1 class="title">REGISTRO</h1>
+        
+        <form class="login-form">
+            <!-- Selector de Rol -->
+            <div class="form-group">
+                <label for="role">TIPO DE USUARIO</label>
+                <select id="role" class="role-select" required>
+                    <option value="" disabled selected>Selecciona tu rol</option>
+                    <option value="client">Cliente</option>
+                    <option value="barber">Barbero</option>
+                </select>
+            </div>
+
+            <!-- Campo Usuario -->
+            <div class="form-group">
+                <label for="username">USUARIO</label>
+                <input type="text" id="username" placeholder="Tu nombre de usuario" required>
+            </div>
+
+            <!-- Campo Teléfono -->
+            <div class="form-group">
+                <label for="phone">TELÉFONO</label>
+                <input type="tel" id="phone" placeholder="Ej: 300 123 4567" required>
+            </div>
+
+            <!-- Campo Correo -->
+            <div class="form-group">
+                <label for="email">CORREO</label>
+                <input type="email" id="email" placeholder="ejemplo@barclick.com" required>
+            </div>
+            
+            <!-- Campo Contraseña -->
+            <div class="form-group">
+                <label for="password">CONTRASEÑA</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            
+            <button type="submit" class="btn-login">REGISTRARSE</button>
+        </form>
+        
+        <div class="register-link">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a></p>
+        </div>
+    </div>
+</body>
+</html>

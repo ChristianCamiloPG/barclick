@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARCLICK - Busca tu Barbero</title>
+  <link rel="stylesheet" href="../css/usuario.css">
+  
+</head>
+<body>
+  <div class="main-container">
+    <!-- Zona superior con filtros y resultados -->
+    <div class="top-section">
+
+      <!-- Filtros a la izquierda -->
+      <div class="filters">
+        <h2>Buscar Barbero</h2>
+        <select><option>Localidad</option>
+            <option>Usaquén</option>
+            <option>Chapinero</option>
+            <option>Santa Fe</option>
+            <option>San Cristóbal</option>
+            <option>Usme</option>
+            <option>Tunjuelito</option>
+            <option>Bosa</option>
+            <option>Kennedy</option>
+            <option>Fontibón</option>
+            <option>Engativá</option>
+            <option>Suba</option>
+            <option>Ciudad Bolívar</option>
+            <option>Rafael Uribe Uribe</option>
+            <option>Antonio Nariño</option>
+            <option>Puente Aranda</option>
+            <option>Los Mártires</option>
+            <option>Teusaquillo</option>
+            <option>Barrios Unidos</option>
+        </select>
+        <select>
+            <option>Experiencia</option>
+            <option>+1 años</option>
+            <option>+2 años</option>
+            <option>+3 años</option>
+            <option>+4 años</option>
+            <option>+5 años</option>
+        </select>
+        <select><option>Horario</option>
+            <option>6:00-8:00</option>
+            <option>8:00-10:00</option>
+            <option>10:00-12:00</option>
+            <option>12:00-14:00</option>
+            <option>14:00-16:00</option>
+            <option>16:00-18:00</option>
+            <option>18:00-20:00</option>
+            <option>20:00-22:00</option>
+        </select>
+        <button class="search-btn">🔍</button>
+        <div id="randomProfile" class="bottom-section"></div>
+      </div>
+      <!-- Resultados al centro/derecha -->
+      <div class="results">
+        <!-- Lista de barberos -->
+        <div class="barbers">
+          <div class="barber-card">
+            <img src="../img/barbero1.png" alt="Barbero 1">
+            <h3>juan</h3>
+            <p>Zona Norte</p>
+            <button class="reserve-btn">RESERVAR</button>
+          </div>
+          <div class="barber-card">
+            <img src="../img/barbero2.jpg" alt="Barbero 2">
+            <h3>cristofer</h3>
+            <p>Zona Centro</p>
+            <button class="reserve-btn">RESERVAR</button>
+          </div>
+          <div class="barber-card">
+            <img src="../img/barbero3.jpeg" alt="Barbero 3">
+            <h3>jonny</h3>
+            <p>Zona Sur</p>
+            <button class="reserve-btn">RESERVAR</button>
+          </div>
+          <div class="barber-card">
+            <img src="../img/barbero4.jpg" alt="Barbero 4">
+            <h3>camilo</h3>
+            <p>Zona Oeste</p>
+            <button class="reserve-btn">RESERVAR</button>
+          </div>
+        </div>
+
+        <!-- Cortes famosos -->
+        <div class="cuts">
+          <div class="cut-card">
+            <img src="../img/corte1.jpg" alt="Corte 1">
+            <p>Corte famoso 1</p>
+          </div>
+          <div class="cut-card">
+            <img src="../img/corte2.jpg" alt="Corte 2">
+            <p>Corte famoso 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frase motivacional -->
+    <div class="motivational-banner">
+      <p>Transforma tu imagen con confianza y estilo</p>
+    </div>
+
+    <!-- Parte inferior -->
+    <div class="bottom-section">
+      <!-- Info del barbero -->
+      <div class="barber-info">
+        <div class="profile">
+          <img src="../img/barbero4.jpg" alt="perfil">
+          <h3>camilo</h3>
+          <p>Edad: 30</p>
+          <p>Localidad: Kennedy</p>
+          <p>Tel: 313******* </p>
+          <p>Email: <a href="mailto:sushibloom@sushibloom.com">sushibloom@sushibloom.com</a></p>
+        </div>
+        <div class="schedule">
+          <p><strong>LUNES - MARTES</strong><br>11:30 - 14:30, 18:00 - 22:30</p>
+          <p><strong>MIÉRCOLES - VIERNES</strong><br>11:00 - 14:00, 18:00 - 22:30</p>
+          <p><strong>DOMINGOS</strong><br>11:00 - 14:00</p>
+          <button class="reserve-btn">RESERVAR</button>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="map">
+        <img src="../img/mapakennedy.png" alt="Mapa de ubicación">
+      </div>
+    </div>
+  </div>
+  <script src="../js/usuario.js"></script>
+</body>
+</html>
