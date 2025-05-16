@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería de Cortes</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Barber Click</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="barberos.html">Barberos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="agendar.html">Agendar</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="filter-section">
+      <label for="filter">Filtrar por tipo de corte:</label>
+      <select id="filter" onchange="filterGallery()">
+        <option value="all">Todos</option>
+        <option value="clasico">Clásico</option>
+        <option value="fade">Fade</option>
+        <option value="diseno">Diseños</option>
+        <option value="moderno">Moderno</option>
+      </select>
+    </section>
+
+    <section class="gallery">
+      <img src="../img/corte1.jpg" alt="Corte 1" class="fade" onclick="showBarbers('corte1')">
+      <img src="../img/corte2.jpg" alt="Corte 2" class="clasico" onclick="showBarbers('corte2')">
+      <img src="../img/corte3.jpg" alt="Corte 3" class="diseno" onclick="showBarbers('corte3')">
+      <img src="../img/corte4.jpg" alt="Corte 4" class="moderno" onclick="showBarbers('corte4')">
+    </section>
+
+    <aside class="barber-profile hidden" id="barberProfile">
+      <h3>Barberos Especializados</h3>
+      <div id="barberList"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barber Click. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../js/galeria.js"></script>
+</body>
+</html>

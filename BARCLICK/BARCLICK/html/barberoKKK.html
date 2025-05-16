@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BARCLICK - Panel del Barbero</title>
+    <link rel="stylesheet" href="../css/barber-panel.css" />
+</head>
+<body>
+
+  <!-- Header y Navegación -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="logo">Barber Click</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="barbero.html">Barberos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="agendar.html">Agendar</a></li>
+          <li><a href="chat.html">Chat</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Registro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <div class="main-container">
+
+    <!-- Encabezado del panel -->
+    <div class="barber-header">
+      <h1 class="barber-name">NOMBRE DEL BARBERO</h1>
+      <div class="barber-info">
+        <p class="phone">📞 313 548 7255</p>
+        <div class="experience-badge">3 AÑOS DE EXPERIENCIA</div>
+      </div>
+    </div>
+
+    <!-- Clientes Programados -->
+    <div class="section">
+      <h2>Clientes Programados</h2>
+      <div class="clients-grid">
+        <div class="client-card">
+          <h3>CLIENTE 1</h3>
+          <p>Zona Norte - 14:00 a 16:00</p>
+        </div>
+        <div class="client-card">
+          <h3>CLIENTE 2</h3>
+          <p>Zona Centro - 10:00 a 12:00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cortes Registrados -->
+    <div class="section">
+      <h2>Mis Cortes</h2>
+      <div class="cuts-grid">
+        <div class="cut-card">
+          <h3>CORTE 1</h3>
+          <p>30 minutos</p>
+        </div>
+        <div class="cut-card">
+          <h3>CORTE 2</h3>
+          <p>45 minutos</p>
+        </div>
+      </div>
+      <button class="btn-primary">AGREGAR CORTE</button>
+    </div>
+
+    <!-- Horario -->
+    <div class="section">
+      <h2>Mi Horario</h2>
+      <div class="schedule-grid">
+        <div class="day-card">
+          <h3>LUNES</h3>
+          <p>14:00 - 16:00</p>
+        </div>
+        <div class="day-card">
+          <h3>MARTES</h3>
+          <p>10:00 - 12:00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registro de Horario -->
+    <div class="section">
+      <h2>Registrar Nuevo Horario</h2>
+      <form class="schedule-form">
+        <div class="form-group">
+          <label for="dia">Día (Ej: Lunes)</label>
+          <input type="text" id="dia" name="dia" placeholder="Día (Ej: Lunes)" />
+        </div>
+        <div class="form-group">
+          <label for="horario">Horario (Ej: 14:00 - 16:00)</label>
+          <input type="text" id="horario" name="horario" placeholder="Horario (Ej: 14:00 - 16:00)" />
+        </div>
+        <button type="submit" class="btn-primary">PUBLICAR</button>
+      </form>
+    </div>
+
+    <!-- Zona de Trabajo -->
+    <div class="section zone-section">
+      <h2>Zona de Trabajo</h2>
+      <button class="btn-primary">BUSCAR MI ZONA</button>
+    </div>
+
+    <!-- Redes Sociales -->
+    <div class="section">
+      <h2>Redes Sociales</h2>
+      <form class="social-form">
+        <div class="form-group">
+          <label for="instagram">Instagram</label>
+          <input type="text" id="instagram" name="instagram" placeholder="Instagram" />
+        </div>
+        <div class="form-group">
+          <label for="facebook">Facebook</label>
+          <input type="text" id="facebook" name="facebook" placeholder="Facebook" />
+        </div>
+        <button type="submit" class="btn-primary">PUBLICAR REDES</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

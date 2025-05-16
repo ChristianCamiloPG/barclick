@@ -1,0 +1,152 @@
+
+/* General - Paleta de colores ajustada */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header y barra de navegación */
+header {
+    background-color: #333;  /* Negro oscuro */
+    color: #fff;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #64b032;  /* Verde destacado */
+}
+
+/* Estilo para la imagen de fondo en la página de inicio */
+main {
+    background: url(/BARCLICK/BARCLICK/img/fondobarber.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Botón principal de acción */
+.btn {
+    background-color: #64b032; /* Verde */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #388e3c;  /* Verde más oscuro */
+}
+
+/* Sección de servicios populares y precios */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.632);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.features .service {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.features .service img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.features .service h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.features .service p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Precios */
+.prices {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.prices h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.prices ul {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.prices ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.prices ul li strong {
+    font-weight: bold;
+    color: #64b032;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

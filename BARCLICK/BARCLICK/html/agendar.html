@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Barber Click</title>
+    <link rel="stylesheet" href="../css/agendar.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Barber Click</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="barberos.html">Barberos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="agendar.html">Agendar</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>Agendar una Cita</h1>
+            <form class="agendar-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="barbero">Barbero:</label>
+                    <select id="barbero" required>
+                        <option value="">Selecciona un barbero</option>
+                        <option value="barbero1">Barbero 1</option>
+                        <option value="barbero2">Barbero 2</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="corte">Tipo de corte:</label>
+                    <select id="corte" required>
+                        <option value="">Selecciona un tipo de corte</option>
+                        <option value="fade">Fade</option>
+                        <option value="clásico">Clásico</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="Ejemplo: 1234567890" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Agendar Cita</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Barber Click. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
